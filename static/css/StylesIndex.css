@@ -1,0 +1,264 @@
+body{
+    background-color: rgb(43, 15, 15);
+}
+
+.TituloGeral {
+
+  text-decoration: none;
+  
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+.TituloGeral .TituloGeralFree{
+
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color:  rgb(43, 15, 15);
+  color: antiquewhite;
+  border: antiquewhite solid 2px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}
+
+.TituloGeral .TituloGeralFree p.titulo{
+
+  font-size: 70px;
+  margin: 10px 10px 10px 10px ;
+}
+
+
+.TituloGeral .TituloGeralFree p.subtitulo{
+
+  font-size: 30px;
+  margin: 10px 10px 10px 10px ;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 9% 10% 10px 10%;
+    
+    
+  }
+  
+  .cards .mp3 {
+    background-color:  rgb(43, 15, 15);
+    text-decoration: none;
+    border: antiquewhite solid 2px;
+    
+  }
+  
+  .cards .mp4 {
+    background-color:  rgb(43, 15, 15);
+    text-decoration: none;
+    border: antiquewhite solid 2px;
+  }
+
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    color: antiquewhite;
+    cursor: pointer;
+    transition: 400ms;
+    
+   
+    
+  }
+  
+  .cards .card p.tip {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 5px;
+  }
+  
+  .cards .card p.second-text {
+    font-size: 20px;
+    margin: 5px;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+
+.tutorial{
+  
+  color: antiquewhite;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 90px 0px 0px 843px;
+}
+
+
+.item-hints {
+    --purple: #720c8f;
+    cursor: pointer;
+    display: inline-block;
+    justify-content: flex-start;
+    padding-right: 150px;
+    margin: 0px 0px 10px 285px;
+    font-size: 30px;
+    
+  }
+  .item-hints .hint {
+    margin: 70px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-hints .hint-dot {
+    z-index: 3;
+    border: 1px solid #ffe4e4;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    -webkit-transform: translate(-0%, -0%) scale(0.95);
+    transform: translate(-0%, -0%) scale(0.95);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .item-hints .hint-radius {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  .item-hints .hint[data-position="1"] .hint-content {
+    top: 85px;
+    left: 50%;
+    margin-left: 56px;
+  }
+  .item-hints .hint-content {
+    width: 300px;
+    position: absolute;
+    z-index: 5;
+    padding: 35px 0;
+    opacity: 0;
+    transition: opacity 0.7s ease, visibility 0.7s ease;
+    color: #fff;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .item-hints .hint:hover .hint-content {
+    position: absolute;
+    z-index: 5;
+    padding: 35px 0;
+    opacity: 1;
+    -webkit-transition: opacity 0.7s ease, visibility 0.7s ease;
+    transition: opacity 0.7s ease, visibility 0.7s ease;
+    color: #fff;
+    visibility: visible;
+    pointer-events: none;
+  }
+  .item-hints .hint-content::before {
+    width: 0px;
+    bottom: 29px;
+    left: 0;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    position: absolute;
+    transition: width 0.4s;
+  }
+  .item-hints .hint:hover .hint-content::before {
+    width: 180px;
+    transition: width 0.4s;
+  }
+  .item-hints .hint-content::after {
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+    bottom: 29px;
+    left: 0;
+    width: 80px;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    position: absolute;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .item-hints .hint:hover .hint-content::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .item-hints .hint[data-position="4"] .hint-content {
+    bottom: 85px;
+    left: 50%;
+    margin-left: 56px;
+  }
+  
+
+
+.Instrução{
+  background-color:  rgb(43, 15, 15);
+  border: 2px solid antiquewhite;
+  border-radius: 10px;
+  width: 1000px;
+  margin: 60px 10% 10px 25%;
+  text-align: center;
+  color: antiquewhite;
+}
+
+.TituloInstrução{
+
+    text-align: center;
+    font-size: 45px;
+    margin: auto;
+    margin-top: 15px;
+    
+}
+
+
+#Introdução {
+
+    
+    
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    
+    
+    
+
+}
+
